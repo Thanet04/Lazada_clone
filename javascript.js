@@ -30,10 +30,9 @@ dropdowns.forEach(dropdown => {
 const prevButton = document.getElementById("prev");
 const nextButton = document.getElementById("next");
 const track = document.querySelector(".next-slick-track");
-const slides = Array.from(track.children); // ดึงรายการสไลด์ทั้งหมด
-const slideWidth = slides[0].getBoundingClientRect().width; // ความกว้างของแต่ละสไลด์
+const slides = Array.from(track.children); 
+const slideWidth = slides[0].getBoundingClientRect().width; 
 
-// จัดเรียงตำแหน่งเริ่มต้นของสไลด์
 slides.forEach((slide, index) => {
     slide.style.left = `${slideWidth * index}px`;
 });
